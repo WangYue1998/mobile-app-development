@@ -17,3 +17,7 @@
  The Mad Hatter in the Cloud 
 # Step 6: 
  The Mad Hatter in your Cloud 
+# Step 7
+ Are we there yet
+  ## DEMO
+ ![](1.gif)
