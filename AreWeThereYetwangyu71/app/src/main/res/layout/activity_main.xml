@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dummy"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textLabelProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/textProvider"
+        android:text="@string/provider"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textLatitude"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textProvider"
+        android:layout_alignStart="@+id/textProvider"
+        android:text="@string/dummy"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textLabelLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLabelProvider"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/textLatitude"
+        android:text="@string/latitude"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textLongitude"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textLatitude"
+        android:layout_alignStart="@+id/textProvider"
+        android:layout_marginEnd="10dp"
+        android:text="@string/dummy"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textLabelLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textLabelLatitude"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/textLongitude"
+        android:text="@string/longitude"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLongitude"
+        android:layout_alignStart="@+id/textLabelLongitude"
+        android:layout_alignEnd="@+id/textLongitude"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/dummy"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textTo"
+        android:layout_alignStart="@+id/textTo"
+        android:layout_alignEnd="@+id/textLongitude"
+        android:gravity="center_horizontal"
+        android:text="@string/dummy"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textNewLocLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDistance"
+        android:layout_alignStart="@+id/textTo"
+        android:layout_alignEnd="@+id/textLongitude"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/new_location"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/editLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textNewLocLable"
+        android:layout_alignStart="@+id/textLabelLongitude"
+        android:layout_alignEnd="@+id/textLongitude"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:textSize="18sp"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/buttonNewLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editLocation"
+        android:layout_alignEnd="@+id/editLocation"
+        android:onClick="onNew"
+        android:text="@string/newBotton"
+        android:textSize="18sp" />
+</RelativeLayout>
